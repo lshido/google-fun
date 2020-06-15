@@ -1,12 +1,8 @@
-import pdb
-
-
 def solution(s):
     """Given a string, abcabcabcabc, return 4 equal parts
     """
     # Step 1: Get the complete list of sub-strings for the entire string by iterating.
     substrings = get_substrings(s)
-    pdb.set_trace()
     for sub in substrings:
         # Step 2: For each sub-string, test if a.count(sub-string) is greater than 0.If not, continue to next substring.
         if not substring_in_string(sub, s):
@@ -41,7 +37,3 @@ def no_leftovers(substring, s):
         return True
     else:
         return False
-
-
-if __name__ == '__main__':
-    solution('abcabc')
