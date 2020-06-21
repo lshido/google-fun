@@ -15,7 +15,7 @@
 # Then, feed current position back into the function.
 # If there are no moves to make, then remove the current position from the path.
 from copy import deepcopy
-import pdb
+
 
 def solution(map):
     all_paths = []
